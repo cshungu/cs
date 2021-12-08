@@ -1,0 +1,35 @@
+:root {
+    --cs-primary:#12cbc4;
+    --cs-primary-light: #3498db;
+    --cs-secondary:#2c3e50;
+    --cs-secondary-light: #34495e;
+    --cs-sucess:#27ae60;
+    --cs-danger: #c0392b;
+    --cs-warning:#f39c12;
+    --cs-info: #16a085;
+    --cs-light: #ffffff;
+    --cs-dark: #1e272e;
+    --cs-divider:#ecf0f1;
+    --cs-hint: #f4f4f4;
+    --font-family: Hack, monospace;
+    --font-family-second: 'Times New Roman', Times, serif;
+    --box-shadow: 0 1px 2px rgba(60, 64, 67, 0.1), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+@import "./variable";
+@import "./mixin";
+@import "./utils";
+html {
+  font-size: 62.5%;
+   @include --boxSizing(border-box);
+}
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  @include --boxSizing(inherit);
+}
+@import "./base";
+@import "./classe";

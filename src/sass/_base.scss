@@ -1,0 +1,35 @@
+body {
+    font-family: var(--font-family);
+    color: var(--cs-secondary);
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    @include --grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-areas: 
+        "hd hd hd"
+        "mn mn mn"
+        "ft ft ft";
+}
+header { 
+    grid-area: hd; 
+    padding: 0;
+    @include print {
+        visibility: hidden;
+    }
+}
+main { 
+    grid-area: mn;
+    padding: 1rem;
+}
+footer { 
+    grid-area: ft; 
+    padding: 1rem;
+    @include print {
+        visibility: hidden;
+    }
+}

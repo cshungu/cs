@@ -1,0 +1,15 @@
+footer {
+    background-color: var(--cs-secondary);
+    padding: 1rem;
+    text-align: center;
+    color: var(--cs-light);
+    .banner-main {
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
